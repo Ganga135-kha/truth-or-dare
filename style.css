@@ -1,0 +1,47 @@
+#container{
+	height: 500px;
+	width: 70%;
+	margin-left: 15%;
+	background: linear-gradient(to top, #365f6d  0%, #f111d561 100%);
+	border-radius: 200px;
+}
+.head{
+	height: 60px;
+	width: 100%;
+	background-color: ;
+	text-align: center;
+	font-size: 2em;
+	line-height: 60px;
+	font-weight: bold;
+}
+#btn1{
+	height: 40px;
+	width: 200px;
+	background-color: #7b4680;
+	border-radius: 15px;
+	box-shadow: 10px 10px 10px  #88888859;
+	margin-left: 250px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+#btn2{
+	color: white;
+	height: 40px;
+	width: 200px;
+	background-color: #729a38;
+	border-radius: 15px;
+	box-shadow: 10px 10px 10px  #88888859;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+#result{
+	height: 150px;
+	width: 100%;
+	background-color: ;
+	margin-top: 50px;
+	font-size: 2em;
+	text-align: center;
+	color: white;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Truth or Dare</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<div class="head">Truth and Dare Game</div>
+		<img src="trut.gif" style="height: 200px; width: 200px; margin-left: 350px;"><br><br><br>
+		<button id="btn1">Truth</button>&nbsp;&nbsp;&nbsp;&nbsp;
+		<button id="btn2">Dare</button><br>
+		<div id="result">Click the button for Truth or Dare</div>
+	</div>
+</body>
+<script>
+	var buttonOne=document.getElementById('btn1');
+	var buttonTwo=document.getElementById('btn2');
+	var output=document.getElementById('result');
+
+	var truth=[
+	"What do most people think is true about you, but isn’t?",
+	"What is the biggest thing you’ve gotten away with?",
+	"What is the biggest lie you have ever told?",
+	" What are you most self-conscious about?",
+	"Who is your crush?"
+	];
+
+	var dare=[
+	"Show the most embarrassing photo on your phone.",
+	"Eat a raw piece of garlic.",
+	"Do 100 push-ups.",
+	"Keep three ice cubes in your mouth until they melt.",
+	"Show the last five people you texted and what the messages said."
+	];
+
+
+
+	buttonOne.addEventListener('click',function(){
+		var randomtruth=truth[Math.floor(Math.random()*truth.length)];
+		output.innerHTML=randomtruth;
+		document.getElementById('container').style.background="#7b4680";
+	})
+
+	buttonTwo.addEventListener('click',function(){
+		var randomdare=dare[Math.floor(Math.random()*dare.length)];
+		output.innerHTML=randomdare;
+		document.getElementById('container').style.background="#729a38";
+	})
+</script>
+</html>
